@@ -8,6 +8,10 @@ class Node:
 global count
 count = 0
 
+# a def return find the number of nodes in the tree
+def count_nodes(node):
+    return count_nodes(node.left) + count_nodes(node.right) + 1 if node else 0
+
 def printPreorder(root):
 	if root:
 		# First print the data of node
@@ -47,3 +51,5 @@ root.right.left.right = Node(1)
 print("Preorder traversal of binary tree is")
 printPreorder(root)
 print("Count:", count)
+result = count_nodes(root)
+print("dugum sayısı:", result)
