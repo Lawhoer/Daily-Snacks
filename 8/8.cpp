@@ -25,10 +25,12 @@ int main() {
     // Test için örnek girdiler
     vector<int> nums1 = { 2, 4, 6, 2, 5 };
     vector<int> nums2 = { 5, 1, 1, 5 };
+    vector<int> nums3 = { 20, 1, 5, 2, 1, 20 };
 
     // Sonuçlarý ekrana yazdýrma
     cout << "Result 1: " << maxNonAdjacentSum(nums1) << endl; // Beklenen çýktý: 13
     cout << "Result 2: " << maxNonAdjacentSum(nums2) << endl; // Beklenen çýktý: 10
+    cout << "Result 3: " << maxNonAdjacentSum(nums3) << endl; // Beklenen çýktý: 45
 
     return 0;
 }
